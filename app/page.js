@@ -1,9 +1,13 @@
-import Image from "next/image";
+import { AnimationGrow } from "./components/AnimationGrow";
+import { AnimationWithKeyFrames } from "./components/AnimationWithKeyFrames";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>Hello, world</h1>
+    <main className="mt-20 flex justify-center">
+      <div className="flex gap-20">
+        <AnimationGrow />
+        <AnimationWithKeyFrames />
+      </div>
     </main>
   );
 }
