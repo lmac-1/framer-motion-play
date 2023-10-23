@@ -1,9 +1,13 @@
 import Link from "next/link";
 
 const navigation = [
-  { link: "/scroll/image", label: "Image scroll" },
-  { link: "/scroll/progress", label: "Scroll progress" },
   { link: "/basic", label: "Basic animations" },
+  { link: "/scroll/progress", label: "Scroll progress" },
+  { link: "/scroll/image", label: "Multiple image scroll examples" },
+  {
+    link: "/scroll/image2",
+    label: "Image scroll (left to right) with large viewport",
+  },
 ];
 
 export default function Home() {

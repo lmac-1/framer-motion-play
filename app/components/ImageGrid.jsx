@@ -21,36 +21,10 @@ export default function ImageGrid({ animationStyle = "x" }) {
 
   return (
     <motion.div ref={targetRef} className="flex gap-5" style={style}>
-      <Image
-        src="https://picsum.photos/300/300"
-        alt="Image 1"
-        height={300}
-        width={300}
-      />
-      <Image
-        src="https://picsum.photos/300/300"
-        alt="Image 2"
-        height={300}
-        width={300}
-      />
-      <Image
-        src="https://picsum.photos/300/300"
-        alt="Image 3"
-        height={300}
-        width={300}
-      />
-      <Image
-        src="https://picsum.photos/300/300"
-        alt="Image 4"
-        height={300}
-        width={300}
-      />
-      <Image
-        src="https://picsum.photos/300/300"
-        alt="Image 5"
-        height={300}
-        width={300}
-      />
+      {/* 5 images */}
+      {range(5).map((i) => (
+        <Image key={i} alt={`Image ${i}`} />
+      ))}
     </motion.div>
   );
 }
