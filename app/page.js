@@ -8,6 +8,10 @@ const navigation = [
     link: "/scroll/image2",
     label: "Image scroll (left to right) with large viewport",
   },
+  {
+    link: "/scroll/scroll1",
+    label: "As you scroll, a div enters from the left and zooms to full screen",
+  },
 ];
 
 export default function Home() {
